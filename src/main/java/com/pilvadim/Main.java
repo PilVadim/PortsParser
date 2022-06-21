@@ -1,9 +1,9 @@
-package com.pilvadim;
+package main.java.com.pilvadim;
 
 import java.util.Arrays;
 
-import static com.pilvadim.OptionsChecker.listAllOptions;
-import static com.pilvadim.Parser.parse;
+import static main.java.com.pilvadim.parsers.OptionsChecker.listAllOptions;
+import static main.java.com.pilvadim.parsers.Parser.parse;
 
 public class Main {
 

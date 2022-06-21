@@ -1,4 +1,4 @@
-package com.pilvadim;
+package main.java.com.pilvadim.parsers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,8 +10,8 @@ public class Parser {
 
     /**Parse string templates
      *
-     * @param input - array of String
-     * @return - array of arrays of integers
+     * @param input array of String
+     * @return array of arrays of integers
      */
     public static int[][] parse( String[] input ){
 
@@ -38,8 +38,10 @@ public class Parser {
         for ( String temp:templates ){
             if ( temp.contains("-") )
                 result.addAll( parseRange(temp) );
-            else
+            else if (temp.matches("^[0-9]+$"))
                 result.add( Integer.parseInt(temp) );
+            else
+                throw new RuntimeException("Number contains illegal symbols: " + temp);
         }
 
         return result

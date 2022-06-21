@@ -1,4 +1,4 @@
-package com.pilvadim;
+package main.java.com.pilvadim.parsers;
 
 import java.util.ArrayList;
 import java.util.List;
