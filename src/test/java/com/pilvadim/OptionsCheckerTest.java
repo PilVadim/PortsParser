@@ -24,9 +24,8 @@ class OptionsCheckerTest {
 
         int[][] temp = get1IntRange();
         int[][] result = listAllOptions( temp );
-        int[][] expect = get1IntResult();
         for (int i = 0; i < result.length; i++ )
-            assertArrayEquals( expect[i], result[i] );
+            assertArrayEquals( temp[i], result[i] );
 
     }
 

@@ -49,7 +49,17 @@ public class Templates {
         return temp;
     }
 
-    static int[][] get1IntResult() {
+    //{"500"}
+    static int[][] get500IntRange() {
+        int[][] temp = new int[1][];
+        int[] arr1 = new int[500];
+        for (int i=0;i<500;i++)
+            arr1[i] = i + 1;
+        temp[0] = arr1;
+        return temp;
+    }
+
+    static int[][] get500IntResult() {
         int[][] temp = new int[1][];
         int[] arr0 = {1};
         temp[0] = arr0;
