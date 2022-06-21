@@ -1,9 +1,15 @@
-package com.test;
+package com.pilvadim;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class OptionsChecker {
+
+    /**Finds all possible options of input integer ranges
+     *
+     * @param input - array of integer ranges
+     * @return - all possible arrays made from integers from ranges
+     */
 
     public static int[][] listAllOptions( int[][] input ){
 
@@ -23,7 +29,7 @@ public class OptionsChecker {
 
     }
 
-    public static void numberSpinner( int[][] input, Integer position, int[] tempArray, List<int[]> result ){
+    private static void numberSpinner( int[][] input, Integer position, int[] tempArray, List<int[]> result ){
 
         for ( int num : input[position] ){
 

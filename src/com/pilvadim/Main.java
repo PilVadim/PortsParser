@@ -1,9 +1,9 @@
-package com.test;
+package com.pilvadim;
 
 import java.util.Arrays;
 
-import static com.test.OptionsChecker.listAllOptions;
-import static com.test.Parser.parse;
+import static com.pilvadim.OptionsChecker.listAllOptions;
+import static com.pilvadim.Parser.parse;
 
 public class Main {
 
